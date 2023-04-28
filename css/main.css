@@ -1,0 +1,19 @@
+.dropdown {
+    position: relative;
+    width: 200px;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 3px;
+}
+ 
+.dropdown > * {
+    box-sizing: border-box;
+    height: 1.5em;
+}
+ 
+.dropdown input {
+    position: absolute;
+    width: calc(100% - 20px);
+}

@@ -1,0 +1,965 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --- Common Styles ---*/
+
+h1 {
+  font-size: 16px;
+}
+
+/*----- Helper Classes -----*/
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+::-moz-selection {
+    color: #FFFFFF;
+    background: #00aeda;
+}
+
+::selection {
+    color: #FFFFFF;
+    background: #00aeda;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+
+.logo {
+  margin: 0 auto;
+	padding: 0px 0px;
+	z-index: 111;
+}
+
+.logo:hover, .logo:focus {
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+/* ------------------------------------------------------
+-------------- Main Section Styling Starts --------------
+--------------------------------------------------------*/
+
+
+#main {
+  height: 100%;
+}
+
+
+/* ----- Hero Section Styling Starts ----- */
+
+.hero-section {
+	height: 100%;
+	background: #FFFFFF;
+	padding: 150px 0 0 0;
+}
+
+.hero-content {
+	padding: 100px 0 100px 0;
+	overflow: hidden;
+}
+
+.hero-content h1 {
+	font-size: 34px;
+	font-weight: 400;
+	color: #262626;
+	line-height: 1.2;
+	letter-spacing: -1px;
+	margin: 0 0 20px 0;
+}
+
+.hero-content p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #A1A1A1;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 25px 0;
+}
+
+
+.btn-action {
+ font-family: 'Roboto', sans-serif;
+ background-color: #4c00da;
+ border: 1px solid #4c00da;
+ border-radius: 0;
+ color: #FFFFFF;
+ font-size: 15px;
+ font-weight: 700;
+ letter-spacing: 1px;
+ line-height: 1;
+ padding: 20px 42px;
+ text-transform: uppercase;
+ outline: none;
+ -webkit-transition: 200ms;
+ -moz-transition: 200ms;
+ -o-transition: 200ms;
+ transition: 200ms;
+}
+
+.btn-action:hover, .btn-action:focus,
+.btn-action:active, .btn-action:active:focus {
+ background: transparent;
+ outline: none;
+ color: #4c00da;
+ background: transparent;
+ border-color: #4c00da;
+}
+
+
+.product .btn-action {
+ background-color: transparent;
+ border: 1px solid #82714a;
+ color: #82714a;
+}
+
+.product .btn-action:hover, .product  .btn-action:focus {
+ background: #92714A;
+ color: #FFFFFF;
+ border-color: #82714A;
+}
+
+
+/* ----------- App Home --------- */
+
+.software .hero-section {
+	padding: 100px 0 0 0;
+	background: #F9F9F9;
+}
+
+.software .hero-content h1 {
+	font-size: 34px;
+	font-weight: 600;
+	color: #444444;
+	margin: 0 0 20px 0;
+}
+
+
+.software .btn-action {
+font-family: Arial;
+ background-color: #4c00da;
+ border: 1px solid #4c00da;
+ border-radius: 50px;
+ color: #FFFFFF;
+ font-size: 13px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ line-height: 1;
+ padding: 12px 24px;
+ text-transform: uppercase;
+ outline: none;
+ -webkit-transition: 200ms;
+ -moz-transition: 200ms;
+ -o-transition: 200ms;
+ transition: 200ms;
+}
+
+.software .btn-action:hover, .software .btn-action:focus,
+.software .btn-action:active, .software .btn-action:active:focus {
+ background: transparent;
+ outline: none;
+ color: #4c00da;
+ background: transparent;
+ border-color: #4c00da;
+}
+
+.software .hero-section img {
+	margin: 0 auto;
+}
+
+
+
+/*---------------- Form Home Styling ------------------- */
+
+.form .hero-section {
+	background:url(../images/background.png);
+	background-size: cover;
+	padding: 150px 0 0 0;
+}
+
+.form .hero-content {
+	padding: 50px 0 50px 0;
+	overflow: hidden;
+}
+
+.form img {
+	margin: 0 auto;
+}
+
+
+.form .hero-content h1 {
+	font-size: 34px;
+	font-weight: 900;
+	color: #fff;
+	line-height: 1.2;
+	letter-spacing: -1px;
+	margin: 0 0 20px 0;
+}
+
+.form .hero-content p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 25px 0;
+}
+
+.form .sub-form {
+	padding: 30px 0 0 0;
+	text-align: left;
+}
+
+
+.form .subscribe-form .submit-button {
+  font-size: 0.9em;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+  padding: 0 25px 0 25px;
+	border-color: #222225;
+  background-color: #222225;
+  color: #FFFFFF;
+	box-shadow: 0 0 1px transparent;
+  outline: none;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+}
+
+.form .subscribe-form .submit-button:hover {
+  border-color: #000000;
+    background-color: #000000;
+  -webkit-transition: 500ms;
+	-moz-transition: 500ms;
+  transition: 500ms;
+}
+
+.form .btn-action {
+	background: #00aeda;
+	border-color: #00aeda;
+	color: #FFFFFF;
+}
+
+.form .btn-action:hover {
+	background: transparent;
+	border-color: #00aeda;
+	color: #00aeda;
+}
+
+
+/* -----------------------------------------------------
+--------------- App Home Styling starts ----------------
+--------------------------------------------------------*/
+
+
+.app .hero-section {
+	padding: 50px 0 0 0;
+}
+
+.app .hero-content {
+	padding: 100px 0 100px 0;
+}
+
+.app img {
+	margin: 0 auto;
+}
+
+
+.app-info h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #404040;
+  margin-top: 30px !important;
+}
+
+.app-info h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color:  #3C4B5D;
+	line-height: 1.4;
+  margin-top: 20px;
+}
+
+.app-info i {
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.app-info span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.app-info .ion {
+  font-size: 1em;
+  color: #ff8000;
+}
+
+.download-buttons {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.download-buttons img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+.app .btn-action {
+	color: #FFFFFF;
+	background: #0054da;
+	border-color: #0054da;
+	 border-radius: 30px;
+}
+
+.app .btn-action:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+/*-------------------------------------------------
+----------- About Section Styling Starts ----------
+--------------------------------------------------*/
+
+.about {
+	padding: 100px 0 100px 0;
+	background: #F1F1F1;
+}
+
+.about-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-content h2 {
+	font-family: 'Josefin Sans';
+	font-size: 24px;
+	line-height: 1.2;
+	color: #111111;
+}
+
+.about-content h3 {
+	font-family: 'Josefin Sans';
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	color: #111111;
+	margin: 50px 0 0 0;
+}
+
+
+/*----------------------------------------------------
+----------- Pitch Section Styling Starts ----------
+-----------------------------------------------------*/
+
+
+.pitch {
+	padding: 100px 0 100px 0;
+	background: #2e2e30;
+}
+
+.pitch-intro {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 0 0 100px 0;
+}
+
+.pitch-intro h1 {
+	font-size: 37px;
+	font-weight: 900;
+	line-height: 1.2;
+	color: #FFF;
+	margin: 0 0 30px 0;
+}
+
+
+.pitch-intro p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #A1A1A1;
+	letter-spacing: 0;
+}
+
+.pitch-icon {
+	margin: 0 0 10px 0;
+	background: #00aeda;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.pitch-icon i {
+	font-size: 34px;
+	color: #FFFFFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 13px;
+}
+
+.pitch-content {
+	padding: 10px 0 50px 0;
+}
+
+.pitch-content h1 {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #FFF;
+	margin: 0 0 10px 0;
+	text-transform:uppercase;
+}
+
+.pitch-content p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #A1A1A1;
+	letter-spacing: 0;
+}
+
+/* --------- App Features Sub ------- */
+
+
+.software .feature-sub {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)), url(../images/app_bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 150px 0 150px 0;
+}
+
+.software .feature-sub .sub-inner h1 {
+	font-family: 'Josefin Sans';
+	font-size: 34px;
+	font-weight: 300;
+	line-height: 1.1;
+	color: #FFF;
+	margin: 0 0 30px 0;
+}
+
+
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+
+.back-to-top {
+	background: rgba(0, 174, 218, 0.5);
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	z-index: 90;
+	display: none;
+	text-decoration: none;
+	color: #0E1729;
+}
+
+.back-to-top i {
+	position: relative;
+	left: 13px;
+	top: 8px;
+	font-size: 24px;
+	color: #FFFFFF;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.back-to-top:hover {
+    background: rgba(0, 174, 218, 0.9);
+    color: #FFFFFF;
+}
+
+.back-to-top:hover i {
+	top: 6px;
+}
+
+.back-to-top:focus {
+    color: #FFFFFF;
+}
+
+
+.product .back-to-top {
+	background: rgba(146, 127, 84, 0.5);
+}
+
+.product .back-to-top:hover {
+	background: rgba(146, 127, 84, 0.9);
+}
+
+
+
+
+/*----------------------------------------------------
+------------- All ------------------------------------
+--------------------- Media --------------------------
+------------------------------- Queries --------------
+-----------------------------------------------------*/
+
+@media only screen and (min-width: 767px) {
+	.logo {
+	  position: absolute;
+	  top: 20px;
+	  left: 20px;
+	}
+
+	.hero-section {
+		padding: 150px 0 100px 0;
+	}
+
+	.form .hero-section {
+		padding: 13% 0;
+	}
+
+	.form .hero-content {
+		padding: 100px 0 100px 0;
+		overflow: hidden;
+	}
+
+	.form .hero-content h1 {
+		font-size: 54px;
+	}
+
+	.product .hero-content {
+		padding: 150px 0 100px 0;
+		text-align: left;
+	}
+
+	.hero-content h1 {
+		font-size: 48px;
+		margin: 0 0 20px 0;
+	}
+
+	.hero-content p {
+		font-size: 14px;
+	}
+
+	.about-content h2 {
+		font-size: 38px;
+	}
+
+	.software .hero-content h1 {
+		font-size: 42px;
+	}
+
+	.image-bg .hero-content h1 {
+		font-size: 54px;
+	}
+
+
+	.signup .hero-content h1 {
+		font-size: 48px;
+	}
+
+	.features .features-list {
+		padding: 100px 0 0 0;
+		text-align: left;
+	}
+
+	.features .features-list ul li {
+		font-size: 18px;
+		display: list-item;
+		text-align: left;
+	}
+
+
+	.software .features {
+		padding: 100px 0 100px 0;
+	}
+
+	.software .features .features-list h1 {
+		font-size: 34px;
+	}
+
+	.software .features .features-list {
+		padding: 30px 0 0 0;
+	}
+
+
+	.software .features .features-list ul li {
+		display: list-item;
+		font-size: 14px;
+		text-align: left;
+	}
+
+
+	.feature-sub {
+		padding: 200px 0 200px 0;
+	}
+
+	.software .feature-sub .sub-inner h1 {
+		font-size: 42px;
+	}
+
+	.split-content {
+		padding: 70px 350px 50px 10px;
+		text-align: left;
+	}
+	
+	.second {
+	padding: 70px 10px 50px 350px;
+	}
+	.split-content h1 {
+		font-size: 37px;
+	}
+.second {
+padding: 70px 10px 50px 350px;
+}
+
+	.pricing {
+		padding: 100px 0 100px 0;
+	}
+
+	.pricing-content {
+		text-align: left;
+	}
+
+	.cta-sub .cta-inner h1 {
+		font-size: 36px;
+	}
+
+	.contact h1 {
+		font-size: 19px;
+	}
+
+	.contact p {
+		font-size: 13px !important;
+	}
+
+	.contact a {
+		font-family:"Open Sans";
+		font-size: 14px;
+	}
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+	.features .features-list {
+		padding: 80px 0 0 0;
+	}
+
+	.split-content {
+		padding: 100px 100px 50px 50px;
+		text-align: left;
+	}
+
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+
+ .subscribe-form .mail {
+   padding: 0 30px 0 20px;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+ }
+
+}
+
+
+@media screen and (max-width: 399px) {
+
+	.cta-sub {
+		text-align: center;
+	}
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+ .subscribe-form .mail {
+	 text-align: center;
+   padding: 0 0 0 0;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+ .form .sub-form .subscribe-form {
+ 	text-align: left;
+ }
+
+
+  .form .sub-form .subscribe-form .mail {
+ 	 text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .form .sub-form .subscribe-form .submit-button {
+    padding: 0 5px 0 5px;
+    border-radius: 0 5px 5px 0;
+ 	 margin-top: 15px;
+  }
+
+ .back-to-top {
+	right: 10px;
+}
+ .second
+ {
+	padding:0px; 
+ }
+
+ }
+
+ @media only screen and (min-width: 991px) and (max-width: 1201px) {
+
+	 .app-features .features-left, .app-features .features-right {
+	 	padding: 0 0 0 0;
+	 }
+
+	 .software .features .features-list {
+		 padding: 0 0 0 0;
+	 }
+
+ }
+
+
+.duck{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+}
+
+
+
+
+
+/* Navbar */
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #24252a;
+  }
+  
+  .logo {
+	cursor: pointer;
+	order: 3;
+	margin-left: auto;
+  }
+  
+  nav {
+	order: 1;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #ecf3f5;
+	text-decoration: none;
+  }
+  
+  .nav__links {
+	list-style: none;
+	display: flex;
+	font-size: 16px;
+  }
+  
+  .nav__links li {
+	padding: 0px 20px;
+  }
+  
+  .nav__links li:nth-child(1) {
+	padding: 0 20px 0 0;
+  }
+  
+  .nav__links li a {
+	transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+	color: #0088a9;
+  }
+  
+  .cta {
+	order: 2;
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: rgb(130, 0, 169);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+	background-color: rgba(99, 0, 169, 0.8);
+  }
+  
+  
+  .menu {
+	display: none;
+  }
+  
+  .overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: #24252a;
+	overflow-x: hidden;
+	transition: all 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+	width: 100%;
+  }
+  
+  .overlay__content {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .overlay a {
+	padding: 15px;
+	font-size: 36px;
+	display: block;
+	transition: all 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+	color: #5200a9;
+  }
+  .overlay .close {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay a {
+	  font-size: 20px;
+	}
+	.overlay .close {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+	}
+  }
+  
+  @media only screen and (max-width: 800px) {
+	.nav__links,
+	.cta {
+	  display: none;
+	}
+	.menu {
+	  display: initial;
+	}
+  }
+  
+
+.farbe {
+	color: rgb(12, 12, 12);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+}
