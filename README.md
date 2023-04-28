@@ -23,6 +23,7 @@ If you find the Website useful, please share it with your friends. Use the templ
 **1.0**
 
 - Our free templates released.
+- Small Bugs fixed
 
 **Credits**
 
