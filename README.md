@@ -20,7 +20,7 @@ If you find the Website useful, please share it with your friends. Use the templ
 
 **Changelog**
 
-**1.0**
+**1.1**
 
 - Our free templates released.
 - Small Bugs fixed
